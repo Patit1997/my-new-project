@@ -1,4 +1,6 @@
 // program to convert decimal to binary
+// export default convertToBinary();
+exports.convertToBinary= convertToBinary;
 function convertToBinary(x) {
     let bin = 0;
     let rem, i = 1, step = 1;
@@ -12,9 +14,10 @@ function convertToBinary(x) {
         i = i * 10;
     }
     console.log(`Binary: ${bin}`);
+    return bin;
 }
 
 // take input
-let number = prompt('Enter a decimal number: ');
+/* let number = prompt('Enter a decimal number: ');
 
-convertToBinary(number);
+convertToBinary(number);*/

@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-
+const main = require("./main");
+/*
 function convertToBinary(x) {
   let bin = 0;
   let rem, i = 1, step = 1;
@@ -16,11 +17,12 @@ function convertToBinary(x) {
   console.log(`Binary: ${bin}`);
   return bin;
 }
- 
+ */
+
 app.get('/binary/:number', (req, res) => {
   res
     .status(200)
-    .json(convertToBinary(req.params.number))
+    .json(main.convertToBinary(req.params.number))
     .end();
 });
 
